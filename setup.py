@@ -34,7 +34,7 @@ Topic :: Software Development :: Libraries :: Application Frameworks
 setup(
 	name = 'asymmetricbase.pagination',
 	version = datetime.now().strftime('%Y%m%d%H%M'),
-	url = 'https://github.com/AsymmetricVentures/asymmetricbase',
+	url = 'https://github.com/AsymmetricVentures/asym-pagination',
 	
 	author = 'Richard Eames',
 	author_email = 'reames@asymmetricventures.com',
@@ -51,6 +51,10 @@ setup(
 		'asymmetricbase.forms',
 		
 	),
+	dependency_links = [
+		'https://github.com/AsymmetricVentures/asym-views.git#egg=asymmetricbase.views',
+		'https://github.com/AsymmetricVentures/asym-forms.git#egg=asymmetricbase.forms',
+	],
 	package_dir = {
 		'asymmetricbase' : 	'asymmetricbase',
 	},
